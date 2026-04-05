@@ -6,9 +6,17 @@
 
 ## 📊 Sample Output
 
-![Funnel](images/funnel_chart.png)
-![A/B Test](images/ab_funnel.png)
-![Retention](images/retention_curve.png)
+<p align="center">
+  <img src="images/funnel_chart.png" width="600"/>
+</p>
+
+<p align="center">
+  <img src="images/ab_funnel.png" width="600"/>
+</p>
+
+<p align="center">
+  <img src="images/retention_curve.png" width="600"/>
+</p>
 
 ---
 
