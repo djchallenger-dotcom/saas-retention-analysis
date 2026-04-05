@@ -1,31 +1,48 @@
-# 📊 SaaS Retention & Funnel Optimization (Case Study)
+# 📊 SaaS Retention & Funnel Optimization
 
-> ⚡ **Quick Take:** Identified onboarding as the largest conversion bottleneck, demonstrated A/B improvements in activation and subscription rates, and uncovered sharp early retention drop-off within 3 days—highlighting key opportunities to improve SaaS growth.
+> ⚡ **Quick Take:** Identified a **32.7pp drop-off in onboarding**, improved conversion by **+6.6pp via A/B testing**, and found **rapid retention decay after Day 18**—highlighting key SaaS growth opportunities.
 
 ---
 
-## 📊 Sample Output
+## 📊 Key Results (At a Glance)
 
+- **Biggest Drop-Off:** Signup → Activation (**−32.7pp**)  
+- **A/B Test Impact:** Subscription conversion (**+6.6pp**)  
+- **Retention Risk:** Near-zero engagement by Day 80  
+
+---
+
+## 📈 Product Insights
+
+### Funnel Analysis
 <p align="center">
   <img src="images/funnel_chart.png" width="700"/>
 </p>
-<p align="center" style="max-width: 700px; margin: auto;">
-<em>Signup → Activation drops from <strong>70.7% to 38.0% (−32.7pp)</strong>, the largest funnel loss, indicating significant onboarding friction preventing users from reaching initial product value.</em>
-</p>
 
+Signup → Activation drops from **70.7% to 38.0% (−32.7pp)**, the largest funnel loss. This indicates onboarding friction preventing users from reaching initial product value.
+
+---
+
+### A/B Test Results
 <p align="center">
   <img src="images/ab_funnel.png" width="700"/>
 </p>
-Signup → Activation drops from **70.7% to 38.0% (−32.7pp)**, the largest funnel loss. This indicates onboarding friction preventing users from reaching initial product value.
 
-<p align="center">
-  <img src="images/retention_curve.png" width="700"/>
-</p>
 Treatment increases subscription conversion from **9.3% to 15.9% (+6.6pp)**. Gains are consistent across all funnel stages, indicating a meaningful improvement in user conversion.
 
 ---
 
+### Retention Curve
+<p align="center">
+  <img src="images/retention_curve.png" width="700"/>
+</p>
+
+Retention peaks at **5.4% around Day 18** before steadily declining to near zero by Day 80. This indicates weak long-term engagement despite moderate early usage.
+
+---
+
 ## 🧠 Problem
+
 SaaS companies often struggle with:
 - Low conversion through onboarding funnels  
 - Poor early-stage retention  
@@ -37,6 +54,7 @@ SaaS companies often struggle with:
 ---
 
 ## 🎯 Objective
+
 Simulate a SaaS product environment and perform end-to-end analysis to:
 - Identify funnel bottlenecks  
 - Evaluate an A/B test  
@@ -45,132 +63,62 @@ Simulate a SaaS product environment and perform end-to-end analysis to:
 
 ---
 
-## 🧩 Why I Built This
-I wanted to simulate a real-world product analytics workflow end-to-end, focusing on how data scientists support product decisions in SaaS environments.
-
----
-
 ## ⚙️ Approach
 
-### 1. Data Simulation
+### Data Simulation
 - Generated synthetic event-level data for ~2,000 users  
-- Simulated key events:
-  - `visit`, `signup`, `activate`, `subscribe`, `session`  
-- Included realistic features:
+- Simulated events: `visit`, `signup`, `activate`, `subscribe`, `session`  
+- Included:
   - acquisition channel  
   - device type  
   - country  
-  - experiment group (A/B)  
+  - experiment group  
 
 ---
 
-### 2. Funnel Analysis
-Tracked user progression:
-
-**Visit → Signup → Activation → Subscription**
-
-**Goal:**
-- Identify the highest drop-off stage  
-- Quantify conversion rates between steps  
+### Funnel Analysis
+- Tracked user progression through onboarding stages  
+- Identified highest drop-off points  
 
 ---
 
-### 3. A/B Testing
-Compared:
-- **Group A (control)**
-- **Group B (treatment)**
-
-Measured:
-- Conversion rates at each funnel stage  
-- Relative performance lift  
-
-⚠️ **Note:**  
-The treatment effect is intentionally embedded in the synthetic data to demonstrate the A/B testing workflow.
+### A/B Testing
+- Compared control (A) vs treatment (B)  
+- Measured conversion lift across funnel  
 
 ---
 
-### 4. Retention Analysis
-Measured user engagement over time:
-- Tracked activity after first interaction  
-- Calculated day-level retention  
-
-**Goal:**
-- Understand when users disengage  
-- Identify early retention risks  
-
----
-
-## 📌 Key Metrics (Example)
-
-- Signup → Activation: **62% → 38% (−24pp drop)**  
-- Activation → Subscription: **38% → 21%**  
-- A/B Test Lift (Subscription): **+12%**  
-- Day 3 Retention: **45% → 18%**  
-
----
-
-## 📈 Key Findings
-
-### 🚧 Funnel Bottleneck
-- Largest drop-off occurs between **Signup → Activation**  
-- Indicates friction in onboarding or initial product experience  
-
-👉 **Recommendation:** Improve onboarding UX or reduce activation steps  
-
----
-
-### 🧪 A/B Test Impact
-- Treatment group outperforms control across funnel stages  
-- Highest lift observed in **activation and subscription rates**  
-
-👉 **Recommendation:** Roll out treatment changes *(pending statistical validation)*  
-
----
-
-### 📉 Retention Drop-Off
-- Significant user drop-off within the first few days  
-- Retention curve declines rapidly after Day 3  
-
-👉 **Recommendation:**  
-- Improve early user engagement  
-- Introduce onboarding emails or in-app prompts  
+### Retention Analysis
+- Measured user activity over time  
+- Identified early and long-term engagement patterns  
 
 ---
 
 ## 💰 Business Impact
 
-If applied in a real SaaS product, these insights could:
-- Increase conversion by improving onboarding (highest ROI stage)  
-- Validate product changes before full rollout (A/B testing)  
-- Improve retention through early engagement strategies  
+If applied to a real SaaS product:
 
-**Potential outcome:**  
-> Even a 5–10% lift in activation can significantly increase revenue at scale  
+- Improving activation could significantly increase revenue  
+- A/B testing enables confident product decisions  
+- Early retention improvements drive long-term growth  
+
+> Even small improvements (5–10%) in activation can scale into major revenue gains.
 
 ---
 
 ## 🚀 How to Run
 
-### 1. Clone the repository
 ```bash
 git clone https://github.com/djchallenger-dotcom/saas-retention-analysis.git
 cd saas-retention-analysis
-2. Create a virtual environment (recommended)
+
 python -m venv venv
+source venv/bin/activate        # Mac/Linux
+venv\Scripts\activate           # Windows
 
-# Mac/Linux
-source venv/bin/activate
-
-# Windows
-venv\Scripts\activate
-3. Install dependencies
 pip install -r requirements.txt
-4. Run the project
 python main.py
 🏗️ Project Structure
-
-Designed with modular, production-style structure:
-
 saas-retention-analysis/
 │
 ├── src/
@@ -188,25 +136,11 @@ Python
 Pandas
 NumPy
 Matplotlib / Seaborn
-💡 What I Would Do Next (Production Scenario)
-
-If this were real company data, next steps would include:
-
-Statistical significance testing (e.g., two-proportion z-test)
-Cohort-based retention analysis (Day 1, Day 7, Day 14)
-Segmentation:
-Device (mobile vs desktop)
-Acquisition channel (paid vs organic)
-Geography
-Experiment iteration based on user behavior insights
-🎯 Why This Project Stands Out
-
-This project demonstrates:
-
-End-to-end product analytics workflow
-Strong business intuition (not just code)
-Ability to translate data into actionable recommendations
-Understanding of experimentation and user behavior
+💡 Future Improvements
+Statistical significance testing
+Cohort-based retention
+Segmentation (device, channel, geography)
+Real-world dataset integration
 👤 Author
 
 Daniel Challenger
