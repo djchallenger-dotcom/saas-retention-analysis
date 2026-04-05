@@ -77,6 +77,8 @@ def main() -> None:
     # over time, which is a key SaaS product metric.
     visualizer.plot_retention(retention_df)
 
+    print("\nSaaS analytics pipeline completed successfully.")
+
 
 if __name__ == "__main__":
     main()
