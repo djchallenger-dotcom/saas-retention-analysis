@@ -142,4 +142,5 @@ This project showcases end-to-end product analytics, combining funnel analysis, 
 ## 📬 Contact
 
 If you'd like to connect or discuss this project, feel free to reach out via LinkedIn.
+https://www.linkedin.com/in/daniel-challenger/
 
