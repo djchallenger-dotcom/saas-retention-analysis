@@ -1,146 +1,132 @@
-# 📊 SaaS User Retention & Funnel Analysis
+📊 SaaS Retention & Funnel Optimization (Case Study)
+🧠 Problem
 
-## Overview
+SaaS companies often struggle with:
 
-This project analyzes user behavior in a simulated SaaS product to identify conversion bottlenecks, measure retention, and evaluate the impact of product changes using A/B testing.
+Low conversion through onboarding funnels
+Poor early-stage retention
+Unclear impact of product changes
 
-The goal is to replicate real-world product analytics workflows used by data scientists and product teams.
+The key question:
 
----
+Where are users dropping off, and what changes will most improve conversion and retention?
 
-## 🚀 Key Features
+🎯 Objective
 
-* **Funnel Analysis**
+Simulate a SaaS product environment and perform end-to-end analysis to:
 
-  * Tracks user progression from visit → signup → activation → subscription
-  * Identifies major drop-off points
+Identify funnel bottlenecks
+Evaluate an A/B test
+Measure user retention
+Generate actionable product insights
+⚙️ Approach
+1. Data Simulation
+Generated synthetic event-level data for ~2,000 users
+Simulated key events:
+visit, signup, activate, subscribe, session
+Included realistic features:
+acquisition channel
+device type
+country
+experiment group (A/B)
+2. Funnel Analysis
 
-* **A/B Testing**
+Tracked user progression:
 
-  * Compares two experiment groups (A vs B)
-  * Measures impact on conversion rates across the funnel
+Visit → Signup → Activation → Subscription
 
-* **Retention Analysis**
+Goal:
 
-  * Analyzes how users return over time
-  * Builds retention curves using session data
+Identify the highest drop-off stage
+Quantify conversion rates between steps
+3. A/B Testing
 
-* **Synthetic SaaS Dataset**
+Compared:
 
-  * Realistic event-based dataset with:
+Group A (control)
+Group B (treatment)
 
-    * user behavior
-    * acquisition channels
-    * device and country segmentation
-    * experiment groups
+Measured:
 
----
+Conversion rates at each funnel stage
+Relative performance lift
 
-## 📁 Project Structure
+⚠️ Note:
+The treatment effect is intentionally embedded in the synthetic data to demonstrate the A/B testing workflow.
 
-```
-saas_retention_analysis/
-├── main.py
-├── src/
-│   ├── data_generator.py
-│   ├── funnel_analysis.py
-│   ├── ab_testing.py
-│   ├── retention_analysis.py
-│   └── visualizer.py
-├── images/
-│   ├── funnel_chart.png
-│   ├── ab_funnel.png
-│   └── retention_curve.png
-├── README.md
-└── requirements.txt
-```
+4. Retention Analysis
 
----
+Measured user engagement over time:
 
-## 📊 Key Results
+Tracked activity after first interaction
+Calculated day-level retention
 
-### Funnel Analysis
+Goal:
 
-* Visit → Signup: ~70%
-* Signup → Activate: ~54%
-* Activate → Subscribe: ~33%
-* Overall conversion: ~12.7%
+Understand when users disengage
+Identify early retention risks
+📈 Key Findings
+🚧 Funnel Bottleneck
+Largest drop-off occurs between Signup → Activation
+Indicates friction in onboarding or initial product experience
 
-📌 **Insight:**
-The largest drop-off occurs at the final stage (activation → subscription), indicating an opportunity to improve monetization strategies.
+👉 Recommendation: Improve onboarding UX or reduce activation steps
 
----
+🧪 A/B Test Impact
+Treatment group outperforms control across funnel stages
+Highest lift observed in activation and subscription rates
 
-### A/B Testing Results
+👉 Recommendation: Roll out treatment changes (pending statistical validation)
 
-* Group A conversion to subscription: ~9.3%
-* Group B conversion to subscription: ~15.9%
+📉 Retention Drop-Off
+Significant user drop-off within the first few days
+Retention curve declines rapidly after Day 3
 
-📌 **Insight:**
-Group B shows a ~70% improvement in conversion rate, suggesting the experimental change significantly improves user conversion.
+👉 Recommendation:
 
----
+Improve early user engagement
+Introduce onboarding emails / in-app prompts
+📊 Example Outputs
+Funnel conversion charts
+A/B comparison plots
+Retention curves
 
-### Retention Analysis
+These visualizations translate raw data into clear product insights.
 
-📌 **Insight:**
-User retention peaks early and gradually declines over time, which is typical for SaaS products. This highlights the importance of early user engagement and ongoing value delivery.
+🚀 How to Run
+git clone https://github.com/djchallenger-dotcom/saas-retention-analysis.git
+cd saas-retention-analysis
 
----
+python -m venv venv
+source venv/bin/activate        # Mac/Linux
+venv\Scripts\activate           # Windows
 
-## 📈 Visualizations
+pip install -r requirements.txt
+python main.py
+🛠️ Tech Stack
+Python
+Pandas
+NumPy
+Matplotlib / Seaborn
+💡 What I Would Do Next (Production Scenario)
 
-### User Funnel
+If this were real company data, next steps would include:
 
-![Funnel](images/funnel_chart.png)
+Statistical significance testing (e.g., two-proportion z-test)
+Cohort-based retention analysis (Day 1, Day 7, Day 14)
+Segmentation:
+Device (mobile vs desktop)
+Acquisition channel (paid vs organic)
+Geography
+Experiment iteration based on user behavior insights
+🎯 Why This Project Stands Out
 
-### A/B Test Comparison
+This project demonstrates:
 
-![A/B Funnel](images/ab_funnel.png)
+End-to-end product analytics workflow
+Strong business intuition (not just code)
+Ability to translate data into actionable recommendations
+Understanding of experimentation and user behavior
+👤 Author
 
-### Retention Curve
-
-![Retention](images/retention_curve.png)
-
----
-
-## 🛠️ Technologies Used
-
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-
----
-
-## 🎯 Business Impact
-
-This project demonstrates how data can be used to:
-
-* Identify where users drop off in a product
-* Improve conversion rates through experimentation
-* Understand user engagement and retention patterns
-* Support product and growth decisions with data
-
----
-
-## 🔮 Future Improvements
-
-* Add statistical significance testing for A/B experiments
-* Build interactive dashboards (Streamlit or Power BI)
-* Incorporate SQL-based analysis
-* Add cohort-based retention analysis
-
----
-
-## 💡 Key Takeaway
-
-This project showcases end-to-end product analytics, combining funnel analysis, experimentation, and retention modeling to drive actionable business insights.
-
----
-
-## 📬 Contact
-
-If you'd like to connect or discuss this project, feel free to reach out via LinkedIn.
-https://www.linkedin.com/in/daniel-challenger/
-
+Daniel Challenger
