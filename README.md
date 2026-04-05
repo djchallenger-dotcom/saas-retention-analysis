@@ -1,107 +1,127 @@
-📊 SaaS Retention & Funnel Optimization (Case Study)
-🧠 Problem
+# 📊 SaaS Retention & Funnel Optimization (Case Study)
 
+## 🧠 Problem
 SaaS companies often struggle with:
+- Low conversion through onboarding funnels  
+- Poor early-stage retention  
+- Unclear impact of product changes  
 
-Low conversion through onboarding funnels
-Poor early-stage retention
-Unclear impact of product changes
+**Key question:**  
+> Where are users dropping off, and what changes will most improve conversion and retention?
 
-The key question:
+---
 
-Where are users dropping off, and what changes will most improve conversion and retention?
-
-🎯 Objective
-
+## 🎯 Objective
 Simulate a SaaS product environment and perform end-to-end analysis to:
+- Identify funnel bottlenecks  
+- Evaluate an A/B test  
+- Measure user retention  
+- Generate actionable product insights  
 
-Identify funnel bottlenecks
-Evaluate an A/B test
-Measure user retention
-Generate actionable product insights
-⚙️ Approach
-1. Data Simulation
-Generated synthetic event-level data for ~2,000 users
-Simulated key events:
-visit, signup, activate, subscribe, session
-Included realistic features:
-acquisition channel
-device type
-country
-experiment group (A/B)
-2. Funnel Analysis
+---
 
+## ⚙️ Approach
+
+### 1. Data Simulation
+- Generated synthetic event-level data for ~2,000 users  
+- Simulated key events:
+  - `visit`, `signup`, `activate`, `subscribe`, `session`  
+- Included realistic features:
+  - acquisition channel  
+  - device type  
+  - country  
+  - experiment group (A/B)  
+
+---
+
+### 2. Funnel Analysis
 Tracked user progression:
 
-Visit → Signup → Activation → Subscription
+**Visit → Signup → Activation → Subscription**
 
-Goal:
+**Goal:**
+- Identify the highest drop-off stage  
+- Quantify conversion rates between steps  
 
-Identify the highest drop-off stage
-Quantify conversion rates between steps
-3. A/B Testing
+---
 
+### 3. A/B Testing
 Compared:
-
-Group A (control)
-Group B (treatment)
+- **Group A (control)**
+- **Group B (treatment)**
 
 Measured:
+- Conversion rates at each funnel stage  
+- Relative performance lift  
 
-Conversion rates at each funnel stage
-Relative performance lift
-
-⚠️ Note:
+⚠️ **Note:**  
 The treatment effect is intentionally embedded in the synthetic data to demonstrate the A/B testing workflow.
 
-4. Retention Analysis
+---
 
+### 4. Retention Analysis
 Measured user engagement over time:
+- Tracked activity after first interaction  
+- Calculated day-level retention  
 
-Tracked activity after first interaction
-Calculated day-level retention
+**Goal:**
+- Understand when users disengage  
+- Identify early retention risks  
 
-Goal:
+---
 
-Understand when users disengage
-Identify early retention risks
-📈 Key Findings
-🚧 Funnel Bottleneck
-Largest drop-off occurs between Signup → Activation
-Indicates friction in onboarding or initial product experience
+## 📈 Key Findings
 
-👉 Recommendation: Improve onboarding UX or reduce activation steps
+### 🚧 Funnel Bottleneck
+- Largest drop-off occurs between **Signup → Activation**  
+- Indicates friction in onboarding or initial product experience  
 
-🧪 A/B Test Impact
-Treatment group outperforms control across funnel stages
-Highest lift observed in activation and subscription rates
+👉 **Recommendation:** Improve onboarding UX or reduce activation steps  
 
-👉 Recommendation: Roll out treatment changes (pending statistical validation)
+---
 
-📉 Retention Drop-Off
-Significant user drop-off within the first few days
-Retention curve declines rapidly after Day 3
+### 🧪 A/B Test Impact
+- Treatment group outperforms control across funnel stages  
+- Highest lift observed in **activation and subscription rates**  
 
-👉 Recommendation:
+👉 **Recommendation:** Roll out treatment changes *(pending statistical validation)*  
 
-Improve early user engagement
-Introduce onboarding emails / in-app prompts
-📊 Example Outputs
-Funnel conversion charts
-A/B comparison plots
-Retention curves
+---
 
-These visualizations translate raw data into clear product insights.
+### 📉 Retention Drop-Off
+- Significant user drop-off within the first few days  
+- Retention curve declines rapidly after Day 3  
 
-🚀 How to Run
+👉 **Recommendation:**  
+- Improve early user engagement  
+- Introduce onboarding emails or in-app prompts  
+
+---
+
+## 📊 Example Outputs
+- Funnel conversion charts  
+- A/B comparison plots  
+- Retention curves  
+
+---
+
+## 🚀 How to Run
+
+### 1. Clone the repository
+```bash
 git clone https://github.com/djchallenger-dotcom/saas-retention-analysis.git
 cd saas-retention-analysis
-
+2. Create a virtual environment (recommended)
 python -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
 
+# Mac/Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+3. Install dependencies
 pip install -r requirements.txt
+4. Run the project
 python main.py
 🛠️ Tech Stack
 Python
