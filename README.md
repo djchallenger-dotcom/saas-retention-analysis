@@ -158,7 +158,7 @@ saas-retention-analysis/
 - NumPy
 - Matplotlib
 
-  ### 💡 Future Improvements
+### 💡 Future Improvements
 - Statistical significance testing
 - Cohort-based retention analysis
 - Segmentation (device, channel, geography)
