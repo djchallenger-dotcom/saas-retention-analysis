@@ -9,17 +9,19 @@
 <p align="center">
   <img src="images/funnel_chart.png" width="700"/>
 </p>
-*Signup → Activation drops from **70.7% to 38.0% (−32.7pp)**, the largest funnel loss, indicating significant onboarding friction preventing users from reaching initial product value.*
+<p align="center" style="max-width: 700px; margin: auto;">
+<em>Signup → Activation drops from <strong>70.7% to 38.0% (−32.7pp)</strong>, the largest funnel loss, indicating significant onboarding friction preventing users from reaching initial product value.</em>
+</p>
 
 <p align="center">
   <img src="images/ab_funnel.png" width="700"/>
 </p>
-*Treatment group increases subscription conversion from 9.3% to 15.9% (+6.6pp), with consistent gains across all funnel stages, indicating a meaningful improvement in overall user conversion.*
+Signup → Activation drops from **70.7% to 38.0% (−32.7pp)**, the largest funnel loss. This indicates onboarding friction preventing users from reaching initial product value.
 
 <p align="center">
   <img src="images/retention_curve.png" width="700"/>
 </p>
-*Retention peaks at approximately 5.4% around Day 18 before steadily declining to near zero by Day 80, indicating weak long-term engagement despite moderate early usage.*
+Treatment increases subscription conversion from **9.3% to 15.9% (+6.6pp)**. Gains are consistent across all funnel stages, indicating a meaningful improvement in user conversion.
 
 ---
 
