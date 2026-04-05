@@ -6,9 +6,9 @@
 
 ## 📊 Sample Output
 
-![Funnel](images/funnel.png)
-![A/B Test](images/ab_test.png)
-![Retention](images/retention.png)
+![Funnel](images/funnel_chart.png)
+![A/B Test](images/ab_funnel.png)
+![Retention](images/retention_curve.png)
 
 ---
 
