@@ -1,3 +1,5 @@
+```markdown
+> ⚡ **Quick Take:** Identified onboarding as the largest conversion bottleneck, demonstrated A/B improvement in activation & subscriptions, and found early retention drop-off within 3 days—suggesting immediate product intervention opportunities.
 # 📊 SaaS Retention & Funnel Optimization (Case Study)
 
 ## 🧠 Problem
