@@ -108,17 +108,31 @@ If applied to a real SaaS product:
 
 ## 🚀 How to Run
 
+### 1. Clone the repository
 ```bash
 git clone https://github.com/djchallenger-dotcom/saas-retention-analysis.git
 cd saas-retention-analysis
-
+```
+### 2. Create a virtual environment (recommended)
+```bash
 python -m venv venv
-source venv/bin/activate        # Mac/Linux
-venv\Scripts\activate           # Windows
 
+# Mac/Linux
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+```
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
+### 4. Run the project
+```bash
 python main.py
-🏗️ Project Structure
+```
+### 🏗️ Project Structure
+```bash
 saas-retention-analysis/
 │
 ├── src/
@@ -127,20 +141,24 @@ saas-retention-analysis/
 │   ├── ab_testing.py
 │   ├── retention_analysis.py
 │   └── visualizer.py
-│
+├── images/
 ├── main.py
 ├── requirements.txt
 └── README.md
-🛠️ Tech Stack
-Python
-Pandas
-NumPy
-Matplotlib / Seaborn
-💡 Future Improvements
-Statistical significance testing
-Cohort-based retention
-Segmentation (device, channel, geography)
-Real-world dataset integration
-👤 Author
+```
+### 🛠️ Tech Stack
+- Python
+- Pandas
+- NumPy
+- Matplotlib
 
-Daniel Challenger
+  ### 💡 Future Improvements
+- Statistical significance testing
+- Cohort-based retention analysis
+- Segmentation (device, channel, geography)
+- Integration with real-world datasets
+- Add automated tests (pytest)
+
+### 👤 Author
+
+**Daniel Challenger**
