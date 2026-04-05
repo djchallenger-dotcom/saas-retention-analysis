@@ -1,18 +1,22 @@
 # 📊 SaaS Retention & Funnel Optimization
 
-> ⚡ **Quick Take:** Identified a **32.7pp drop-off in onboarding**, improved conversion by **+6.6pp via A/B testing**, and found **rapid retention decay after Day 18**—highlighting key SaaS growth opportunities.
+> > ⚡ **Quick Take:** Identified a **32.7pp onboarding drop-off**, improved conversion by **+6.6pp via A/B testing**, and found **near-zero retention by Day 80**.
 
 ---
 
-## 📊 Key Results (At a Glance)
+## 📊 Key Results
 
-- **Biggest Drop-Off:** Signup → Activation (**−32.7pp**)  
-- **A/B Test Impact:** Subscription conversion (**+6.6pp**)  
-- **Retention Risk:** Near-zero engagement by Day 80  
+| Metric | Result |
+|------|--------|
+| Funnel Drop-Off | **−32.7pp (Signup → Activation)** |
+| A/B Test Lift | **+6.6pp (Subscription Conversion)** |
+| Retention Risk | **~0% by Day 80** |
 
 ---
 
 ## 📈 Product Insights
+
+The following analyses highlight key conversion and retention challenges across the user lifecycle.
 
 ### Funnel Analysis
 <p align="center">
@@ -49,7 +53,7 @@ SaaS companies often struggle with:
 - Unclear impact of product changes  
 
 **Key question:**  
-> Where are users dropping off, and what changes will most improve conversion and retention?
+> Where are users dropping off, and how can conversion and retention be improved?
 
 ---
 
@@ -64,6 +68,8 @@ Simulate a SaaS product environment and perform end-to-end analysis to:
 ---
 
 ## ⚙️ Approach
+
+Designed to mirror real-world product analytics workflows used in SaaS companies.
 
 ### Data Simulation
 - Generated synthetic event-level data for ~2,000 users  
